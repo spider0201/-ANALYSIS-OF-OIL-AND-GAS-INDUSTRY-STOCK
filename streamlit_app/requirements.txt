@@ -1,1 +1,6 @@
+pandas
+numpy
 plotly
+tensorflow
+scikit-learn
+vnstock3
