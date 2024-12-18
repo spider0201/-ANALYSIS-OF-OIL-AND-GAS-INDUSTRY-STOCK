@@ -85,7 +85,8 @@ try:
 
             # Biểu đồ sparkline
             fig_spark = go.Figure(go.Scatter(x=data['date'], y=data['close'], mode='lines', line=dict(color='blue')))
-            fig_spark.update_layout(height=100, margin=dict(l=10, r=10, t=10, b=10))
+            fig_spark.update_layout(title = "Lịch sử giá",xaxis_title='Ngày',
+                yaxis_title='Giá đóng cửa',height=300, margin=dict(l=10, r=10, t=30, b=10))
             st.plotly_chart(fig_spark, use_container_width=True)
             # Biểu đồ cột cho khối lượng giao dịch
             fig_volume = go.Figure(go.Bar(x=data['date'], y=data['volume'], marker=dict(color='rgba(0, 204, 255, 10)')))
