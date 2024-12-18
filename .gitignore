@@ -1,0 +1,14 @@
+# Streamlit app files
+.streamlit/
+
+# Python virtual environment
+venv/
+
+# Logs
+*.log
+
+# Bytecode files
+*.pyc
+
+# Thư mục hệ thống
+__pycache__/
