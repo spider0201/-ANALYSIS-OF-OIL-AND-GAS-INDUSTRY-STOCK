@@ -1,14 +1,35 @@
-# Streamlit app files
+# Streamlit config files
 .streamlit/
 
 # Python virtual environment
 venv/
 
-# Logs
+# Logs and debug files
 *.log
+*.out
+*.err
 
-# Bytecode files
+# Compiled Python files
 *.pyc
+*.pyo
+*.pyd
 
-# Thư mục hệ thống
+# Cache directories
 __pycache__/
+.pytest_cache/
+.cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
