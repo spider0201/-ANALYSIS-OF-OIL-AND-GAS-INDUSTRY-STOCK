@@ -51,7 +51,7 @@ def predict_stock_price(model, data, n_steps=5):
     return predicted_prices.flatten()
 
 # Tải mô hình
-model_path = 'stock_prediction.h5'
+model_path = './streamlit_app/stock_prediction.h5'
 model = load_model(model_path)
 
 # Giao diện ứng dụng Streamlit
