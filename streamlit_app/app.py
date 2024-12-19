@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 from datetime import date
 from vnstock3 import Vnstock
@@ -51,7 +51,7 @@ def predict_stock_price(model, data, n_steps=5):
     return predicted_prices.flatten()
 
 # Tải mô hình
-model_path = '.\streamlit_app\stock_prediction.h5'
+model_path = 'stock_prediction.keras'
 model = load_model(model_path)
 
 # Giao diện ứng dụng Streamlit

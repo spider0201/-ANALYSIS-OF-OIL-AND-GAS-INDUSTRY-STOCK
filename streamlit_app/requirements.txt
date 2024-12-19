@@ -5,3 +5,4 @@ plotly
 tensorflow
 scikit-learn
 vnstock3
+h5py
